@@ -49,6 +49,7 @@ export default function HeroSection() {
 
 		<div
 		  className="
+		  hidden lg:flex
 		  relative
 
 		  flex
