@@ -10,23 +10,101 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-20 pb-12 lg:pt-28 lg:pb-20"
+      className="
+        relative
+        overflow-hidden
+
+        pt-24
+        pb-20
+      "
     >
-      {/* Background Scene */}
       <HorizonScene />
 
       <Container>
+
         <FadeIn>
-          <div className="grid items-center gap-12 lg:grid-cols-2">
 
-            {/* LEFT SIDE */}
+          <div
+            className="
+              relative
 
-            <div className="relative z-10">
+              min-h-[720px]
+
+              lg:min-h-[820px]
+
+              flex
+
+              flex-col
+
+              lg:flex-row
+
+              items-center
+
+              justify-between
+
+              gap-16
+            "
+          >
+
+            {/* LOGO */}
+
+            <div
+              className="
+                absolute
+
+                left-1/2
+
+                top-1/2
+
+                -translate-x-1/2
+
+                -translate-y-[42%]
+
+                pointer-events-none
+
+                opacity-90
+
+                z-0
+              "
+            >
+
+              <AdjustableLogo
+                src="/logo/blitz.png"
+                className="
+                  w-[260px]
+
+                  sm:w-[360px]
+
+                  md:w-[500px]
+
+                  lg:w-[720px]
+
+                  xl:w-[900px]
+
+                  2xl:w-[1050px]
+                "
+              />
+
+            </div>
+
+            {/* TEXT */}
+
+            <div
+              className="
+                relative
+
+                z-10
+
+                max-w-3xl
+              "
+            >
 
               <p
                 className="
                   mb-4
+
                   text-xl
+
                   text-cyan-400
 
                   sm:text-2xl
@@ -40,7 +118,8 @@ export default function HeroSection() {
               <h1
                 className="
                   font-bold
-                  leading-tight
+
+                  leading-none
 
                   text-5xl
 
@@ -57,7 +136,8 @@ export default function HeroSection() {
                   mb-6
 
                   font-bold
-                  leading-tight
+
+                  leading-none
 
                   text-5xl
 
@@ -93,7 +173,7 @@ export default function HeroSection() {
 
                   text-base
 
-                  text-gray-400
+                  text-gray-300
 
                   sm:text-lg
 
@@ -123,48 +203,12 @@ export default function HeroSection() {
 
             </div>
 
-            {/* RIGHT SIDE */}
-
-            <div
-              className="
-                relative
-                z-10
-
-                flex
-                justify-center
-
-                mt-6
-
-                lg:mt-0
-              "
-            >
-
-              <div
-                className="
-                  w-full
-
-                  max-w-[260px]
-
-                  sm:max-w-[360px]
-
-                  md:max-w-[480px]
-
-                  lg:max-w-[620px]
-
-                  xl:max-w-[720px]
-                "
-              >
-                <AdjustableLogo
-                  src="/logo/blitz.png"
-                  size={720}
-                />
-              </div>
-
-            </div>
-
           </div>
+
         </FadeIn>
+
       </Container>
+
     </section>
   );
 }
