@@ -2,34 +2,28 @@ import Image from "next/image";
 
 type AdjustableLogoProps = {
   src: string;
-  size: number;
+  className?: string;
 };
 
 export default function AdjustableLogo({
   src,
-  size,
+  className = "",
 }: AdjustableLogoProps) {
   return (
     <div
-      style={{
-        width: `${size}px`,
-        height: `${size}px`,
-      }}
-      className="
-      relative
-      flex
-      items-center
-      justify-center
-      "
+      className={`
+        relative
+        aspect-square
+        w-full
+        ${className}
+      `}
     >
       <Image
         src={src}
         alt="Blitz Logo"
         fill
         priority
-        className="
-        object-contain
-        "
+        className="object-contain"
       />
     </div>
   );
