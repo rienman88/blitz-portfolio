@@ -11,16 +11,49 @@ export default function MobileMenu() {
 
       <button
         onClick={() => setOpen(!open)}
-        className="text-white md:hidden"
+        className="
+          text-white
+
+          text-2xl
+
+          md:hidden
+        "
       >
         ☰
       </button>
 
       {open && (
 
-        <div className="absolute top-20 left-0 w-full bg-slate-950 border-t border-slate-800">
+        <div
+          className="
+            absolute
 
-          <div className="flex flex-col gap-6 p-8">
+            top-full
+            left-0
+
+            w-full
+
+            border-t
+            border-cyan-500/10
+
+            bg-[#030712]/95
+
+            backdrop-blur-xl
+          "
+        >
+
+          <div
+            className="
+              flex
+              flex-col
+
+              gap-6
+
+              p-8
+
+              text-white
+            "
+          >
 
             <a href="#home">Home</a>
 
@@ -30,12 +63,47 @@ export default function MobileMenu() {
 
             <a href="#projects">Projects</a>
 
+            <a href="#hackathons">Hackathons</a>
+
             <a href="#certifications">
               Certifications
             </a>
 
             <a href="#contact">
               Contact
+            </a>
+
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                mt-4
+
+                rounded-xl
+
+                border
+                border-cyan-500/30
+
+                bg-cyan-500/10
+
+                px-5
+                py-3
+
+                text-center
+
+                font-semibold
+
+                text-cyan-400
+
+                transition
+
+                hover:bg-cyan-500
+
+                hover:text-white
+              "
+            >
+              Download Resume
             </a>
 
           </div>
