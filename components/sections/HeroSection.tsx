@@ -10,34 +10,22 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden py-16 md:py-20"
+      className="relative overflow-hidden pt-20 pb-12 lg:pt-28 lg:pb-20"
     >
+      {/* Background Scene */}
+      <HorizonScene />
+
       <Container>
         <FadeIn>
+          <div className="grid items-center gap-12 lg:grid-cols-2">
 
-          <div
-            className="
-              grid
-              items-center
-              gap-8
+            {/* LEFT SIDE */}
 
-              grid-cols-[60%_40%]
-
-              md:grid-cols-[58%_42%]
-
-              lg:grid-cols-[56%_44%]
-
-              xl:grid-cols-[55%_45%]
-            "
-          >
-
-            {/* LEFT */}
-
-            <div>
+            <div className="relative z-10">
 
               <p
                 className="
-                  mb-3
+                  mb-4
                   text-xl
                   text-cyan-400
 
@@ -52,12 +40,11 @@ export default function HeroSection() {
               <h1
                 className="
                   font-bold
+                  leading-tight
 
-                  text-4xl
+                  text-5xl
 
-                  sm:text-5xl
-
-                  md:text-6xl
+                  sm:text-6xl
 
                   lg:text-7xl
                 "
@@ -67,17 +54,16 @@ export default function HeroSection() {
 
               <h1
                 className="
-                  mb-5
+                  mb-6
 
                   font-bold
+                  leading-tight
 
-                  text-4xl
+                  text-5xl
 
                   text-blue-500
 
-                  sm:text-5xl
-
-                  md:text-6xl
+                  sm:text-6xl
 
                   lg:text-7xl
                 "
@@ -87,7 +73,7 @@ export default function HeroSection() {
 
               <h2
                 className="
-                  mb-5
+                  mb-6
 
                   text-xl
 
@@ -121,6 +107,8 @@ export default function HeroSection() {
                 className="
                   mt-6
 
+                  max-w-2xl
+
                   text-sm
 
                   text-gray-400
@@ -135,75 +123,48 @@ export default function HeroSection() {
 
             </div>
 
-            {/* RIGHT */}
+            {/* RIGHT SIDE */}
 
             <div
               className="
                 relative
+                z-10
 
                 flex
-                items-center
                 justify-center
 
-                h-[280px]
+                mt-6
 
-                sm:h-[360px]
-
-                md:h-[460px]
-
-                lg:h-[560px]
-
-                xl:h-[620px]
-
-                overflow-visible
+                lg:mt-0
               "
             >
 
               <div
                 className="
-                  relative
-                  z-10
+                  w-full
 
-                  top-6
+                  max-w-[260px]
 
-                  sm:top-8
+                  sm:max-w-[360px]
 
-                  md:top-10
+                  md:max-w-[480px]
 
-                  lg:top-12
+                  lg:max-w-[620px]
+
+                  xl:max-w-[720px]
                 "
               >
-
-                <div
-                  className="
-                    w-[180px]
-
-                    sm:w-[250px]
-
-                    md:w-[360px]
-
-                    lg:w-[500px]
-
-                    xl:w-[650px]
-                  "
-                >
-                  <AdjustableLogo
-                    src="/logo/blitz.png"
-                    size={650}
-                  />
-                </div>
-
+                <AdjustableLogo
+                  src="/logo/blitz.png"
+                  size={720}
+                />
               </div>
 
             </div>
 
           </div>
-
         </FadeIn>
       </Container>
-
-      <HorizonScene />
-
     </section>
   );
 }
