@@ -23,7 +23,7 @@ export default function StatsSection() {
             
              <StatCard
               value="3"
-              title="Hackathon Submissions"
+              title="Successful Hackathon Submissions"
             />
 
             <StatCard
