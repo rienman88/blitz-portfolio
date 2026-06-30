@@ -22,10 +22,11 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Identity Security Lab - Github Status : Private - In-progress",
+    title: "Identity Security Lab",
 
     description:
-      "Identity and Access Management laboratory built using Keycloak, OpenLDAP, Docker and enterprise authentication workflows.",
+      "Identity and Access Management laboratory built using Keycloak, OpenLDAP, Docker and enterprise authentication workflows."
+      "Github Status : Private - In-progress, available upon request",
 
     technologies: [
       "Keycloak",
@@ -42,10 +43,11 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Security Platform Engineering Lab- Github Status : Private - Future Development",
+    title: "Security Platform Engineering Lab",
 
     description:
-      "Linux-based platform engineering environment for infrastructure automation, security services and identity platforms.",
+      "Linux-based platform engineering environment for infrastructure automation, security services and identity platforms."
+      "Github Status : Private - Future Development",
 
     technologies: [
       "Linux",
