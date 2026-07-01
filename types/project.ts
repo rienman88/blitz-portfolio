@@ -8,4 +8,6 @@ export type Project = {
   githubUrl: string;
 
   logo: string;
+
+  githubStatus?: string; 
 };
