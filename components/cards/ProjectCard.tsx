@@ -100,6 +100,15 @@ export default function ProjectCard({
           hover:text-cyan-300
           "
         >
+			{project.githubStatus && (
+ 			 <div className="rounded-md border border-amber-500/25 bg-amber-500/10 px-3 py-2">
+    			<span className="text-xs font-bold uppercase tracking-widest text-amber-400">
+      	   Github Status{" "}
+   				</span>
+    			<span className="text-sm text-slate-200">{project.githubStatus}</span>
+  			</div>
+			)}
+			
           View GitHub →
         </a>
 
