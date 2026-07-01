@@ -101,8 +101,8 @@ export default function ProjectCard({
           "
         >
 			{project.githubStatus && (
- 			 <div className="rounded-md border border-amber-500/25 bg-amber-500/10 px-3 py-2">
-    			<span className="text-xs font-bold uppercase tracking-widest text-amber-400">
+ 			 <div className="rounded-md border border-blue-500/25 bg-blue-500/10 px-3 py-2">
+    			<span className="text-xs font-bold uppercase tracking-widest text-cyan-400">
       	   Github Status{" "}
    				</span>
     			<span className="text-sm text-slate-200">{project.githubStatus}</span>
